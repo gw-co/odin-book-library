@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>My Book Collection</h1>
-    <input type="button" class="add-a-new-book show-modal" value="Add a new book" onclick="bookadder.showModal();">
+    <input type="button" class="add-a-new-book show-modal" value="Add a new book" onclick="bookadder_show()">
     <dialog class="book-adder ">
         <div class="lv1">
             <div class="lv2">
@@ -24,11 +24,12 @@
         <div class="lv1">
             <div class="lv2">
                 <label for="read-status">Status: </label>
+                <!-- <input type="" name="read-status" id="read-status"> -->
                 <select name="read-status" id="read-status">
                     <option value="">--select-value--</option>
-                    <option value="Read" >Read</option>
-                    <option value="Reading">Reading</option>
-                    <option value="Not Read">Not Read</option>
+                    <option value="read" >Read</option>
+                    <option value="reading">Reading</option>
+                    <option value="notread">Not Read</option>
                 </select>
             </div>
             <button value="Add-book" class="add-book">Add book</button>
