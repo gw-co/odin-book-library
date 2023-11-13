@@ -1,10 +1,12 @@
 let library = [];
 let choices = ['Read', 'Reading', 'Not Read'];
 
-function Book(title, author, status){
-    this.title = title;
-    this.author = author;
-    this.status = status;
+class Book {
+    constructor(title, author, status) {
+        this.title = title;
+        this.author = author;
+        this.status = status;
+    }
 }
 
 function updatelist(){
@@ -83,11 +85,11 @@ addbookbutton.addEventListener("click", (ev) => {
 });
 
 // add random books
-// for(let i = 0; i < 10; i++){
-//     let t = randstring(10);
-//     let a = randstring(10);
-//     let s = choices[Math.floor(Math.random()*3)];
-//     library.push(new Book(t, a, s));
-// }
+/*for(let i = 0; i < 10; i++){
+    let t = randstring(10);
+    let a = randstring(10);
+    let s = choices[Math.floor(Math.random()*3)];
+    library.push(new Book(t, a, s));
+}*/
 
 updatelist();
